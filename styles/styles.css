@@ -769,7 +769,6 @@ body {
 }
 
 .hotel-rating {
-  max-width: 90px;
   height: 37px;
 
   background-image: url("../images/icons/rating.svg");
@@ -781,23 +780,23 @@ body {
 }
 
 .rating-1 {
-  width: 17px;
+  width: 22px;
 }
 
 .rating-2 {
-  width: 36px;
+  width: 44px;
 }
 
 .rating-3 {
-  width: 54px;
+  width: 68px;
 }
 
 .rating-4 {
-  width: 73px;
+  width: 92px;
 }
 
 .rating-5 {
-  width: 90px;
+  width: 118px;
 }
 
 .hotel-rating-info {
