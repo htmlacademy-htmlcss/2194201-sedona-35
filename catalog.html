@@ -17,13 +17,13 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+              <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
+              <a class="navigation-link" href="#">О Cедоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link">Гостиницы</a>
+              <a class="navigation-link navigation-link-current">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -92,13 +92,13 @@
                     <span class="control-text">Гостиница</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="type-housing" value="motel">
                     <span class="control-text">Мотель</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="type-housing" value="apartments">
                     <span class="control-text">Апартаменты</span>
@@ -108,11 +108,11 @@
             </fieldset>
             <fieldset class="filter-price filter-group">
               <legend class="filter-title">Стоимость, ₽:</legend>
-              <label class="filter-price-min">
+              <label class="filter-price-title filter-price-min">
                 <span class="filter-price-text">от</span>
                 <input class="filter-input" type="number" name="min-price" value="0" min="0">
               </label>
-              <label class="filter-price-max">
+              <label class="filter-price-title filter-price-max">
                 <span class="filter-price-text">до</span>
                 <input class="filter-input" type="number" name="max-price" value="9000" min="0">
               </label>
@@ -160,16 +160,12 @@
               <a class="hotel-link" href="#">
                 <h3 class="hotel-title">Amara Resort & Spa</h3>
               </a>
-              <div class="hotel-meta">
-                <span class="hotel-meta-type-housing">Гостиница</span>
-                <span class="hotel-meta-price">От 4000 ₽</span>
-              </div>
-              <div class="hotel-menu">
-                <a class="button button-brown hotel-menu-link" href="#">Подробнее</a>
-                <button class="button button-blue hotel-menu-link" type="button">В избранное</button>
-                <div class="hotel-rating rating-4" aria-label="4 звезды."></div>
-                <div class="hotel-rating-info">Рейтинг: 8,5</div>
-              </div>
+              <span class="hotel-meta hotel-meta-type-housing">Гостиница</span>
+              <span class="hotel-meta hotel-meta-price">От 4000 ₽</span>
+              <a class="button button-brown hotel-page" href="#">Подробнее</a>
+              <button class="button button-blue button-hotel-favorites" type="button">В избранное</button>
+              <div class="hotel-rating rating-4" aria-label="4 звезды."></div>
+              <div class="hotel-rating-info">Рейтинг: 8,5</div>
             </li>
             <li class="hotel-item">
               <a class="hotel-link" href="#">
@@ -178,16 +174,12 @@
               <a class="hotel-link" href="#">
                 <h3 class="hotel-title">Villas at Poco Diablo</h3>
               </a>
-              <div class="hotel-meta">
-                <span class="hotel-meta-type-housing">Гостиница</span>
-                <span class="hotel-meta-price">От 5000 ₽</span>
-              </div>
-              <div class="hotel-menu">
-                <a class="button button-brown hotel-menu-link" href="#">Подробнее</a>
-                <button class="button button-blue hotel-menu-link hotel-menu-link-current" type="button">В избранном</button>
-                <div class="hotel-rating rating-4" aria-label="4 звезды."></div>
-                <div class="hotel-rating-info">Рейтинг: 9,2</div>
-              </div>
+              <span class="hotel-meta hotel-meta-type-housing">Гостиница</span>
+              <span class="hotel-meta hotel-meta-price">От 5000 ₽</span>
+              <a class="button button-brown hotel-page" href="#">Подробнее</a>
+              <button class="button button-blue button-hotel-favorites button-hotel-favorites-current" type="button">В избранном</button>
+              <div class="hotel-rating rating-4" aria-label="4 звезды."></div>
+              <div class="hotel-rating-info">Рейтинг: 9,2</div>
             </li>
             <li class="hotel-item">
               <a class="hotel-link" href="#">
@@ -196,16 +188,12 @@
               <a class="hotel-link" href="#">
                 <h3 class="hotel-title">Desert Quail Inn</h3>
               </a>
-              <div class="hotel-meta">
-                <span class="hotel-meta-type-housing">Гостиница</span>
-                <span class="hotel-meta-price">От 2500 ₽</span>
-              </div>
-              <div class="hotel-menu">
-                <a class="button button-brown hotel-menu-link" href="#">Подробнее</a>
-                <button class="button button-blue hotel-menu-link" type="button">В избранное</button>
-                <div class="hotel-rating rating-3" aria-label="3 звезды."></div>
-                <div class="hotel-rating-info">Рейтинг: 6,9</div>
-              </div>
+              <span class="hotel-meta hotel-meta-type-housing">Гостиница</span>
+              <span class="hotel-meta hotel-meta-price">От 2500 ₽</span>
+              <a class="button button-brown hotel-page" href="#">Подробнее</a>
+              <button class="button button-blue button-hotel-favorites" type="button">В избранное</button>
+              <div class="hotel-rating rating-3" aria-label="3 звезды."></div>
+              <div class="hotel-rating-info">Рейтинг: 6,9</div>
             </li>
             <li class="hotel-item">
               <a class="hotel-link" href="#">
@@ -214,16 +202,12 @@
               <a class="hotel-link" href="#">
                 <h3 class="hotel-title">GreenTree Inn</h3>
               </a>
-              <div class="hotel-meta">
-                <span class="hotel-meta-type-housing">Гостиница</span>
-                <span class="hotel-meta-price">От 1500 ₽</span>
-              </div>
-              <div class="hotel-menu">
-                <a class="button button-brown hotel-menu-link" href="#">Подробнее</a>
-                <button class="button button-blue hotel-menu-link" type="button">В избранное</button>
-                <div class="hotel-rating rating-2" aria-label="2 звезды."></div>
-                <div class="hotel-rating-info">Рейтинг: 5,0</div>
-              </div>
+              <span class="hotel-meta hotel-meta-type-housing">Гостиница</span>
+              <span class="hotel-meta hotel-meta-price">От 1500 ₽</span>
+              <a class="button button-brown hotel-page" href="#">Подробнее</a>
+              <button class="button button-blue button-hotel-favorites" type="button">В избранное</button>
+              <div class="hotel-rating rating-2" aria-label="2 звезды."></div>
+              <div class="hotel-rating-info">Рейтинг: 5,0</div>
             </li>
           </ul>
           <ul class="pagination">
