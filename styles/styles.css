@@ -708,7 +708,7 @@ body {
   border-radius: 4px;
 
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: min-content 1fr repeat(3, auto);
   row-gap: 16px;
 }
 
