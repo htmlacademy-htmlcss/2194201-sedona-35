@@ -113,7 +113,7 @@ body {
   z-index: 1;
 
   width: 140px;
-  margin-right: 44px;
+  margin-right: 28px;
 }
 
 .logo-img {
@@ -124,10 +124,6 @@ body {
 
 .navigation-item {
   position: relative;
-}
-
-.navigation-item:not(:last-child) {
-  margin-right: 32px;
 }
 
 .navigation-list {
@@ -148,7 +144,7 @@ body {
 }
 
 .navigation-link {
-  padding: 19px 0;
+  padding: 19px 16px;
 
   line-height: 64px;
   color: #000000;
@@ -157,11 +153,13 @@ body {
 .navigation-link-current:before {
   content: "";
   position: absolute;
+  right: 0;
   bottom: -1px;
   left: 0;
   z-index: 1;
 
-  width: 100%;
+  width: calc(100% - 32px);
+  margin: 0 auto;
 
   border-bottom: 2px solid #756257;
 }
