@@ -128,16 +128,17 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button.button-transparent[disabled] {
+.button.button-transparent:disabled {
   color: rgba(255, 255, 255, 0.1);
 
   background-color: transparent;
 }
 
-.button[disabled] {
+.button:disabled {
   color: #ffffff;
 
   background-color: #e5e5e5;
+  cursor: default;
 }
 
 /* Header */
@@ -794,7 +795,7 @@ body {
   outline: none;
 }
 
-.hotels-sort[disabled] {
+.hotels-sort:disabled {
   color: rgba(0, 0, 0, 0.3);
 
   background-image: url("../images/icons/select-arrow-disabled.svg");
