@@ -713,7 +713,7 @@ body {
 
 .filter-input {
   max-width: 143px;
-  padding: 12px 0 12px 20px;
+  padding: 12px 45px 12px 20px;
 
   font-weight: 700;
   font-size: 18px;
@@ -722,6 +722,13 @@ body {
 
   background-color: #f2f2f2;
   border: 0;
+}
+
+.filter-input::-webkit-inner-spin-button,
+.filter-input::-webkit-outer-spin-button {
+  margin: 0;
+
+  appearance: none;
 }
 
 .filter-input:focus {
