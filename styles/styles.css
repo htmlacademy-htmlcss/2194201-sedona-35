@@ -581,9 +581,14 @@ body {
 }
 
 .filter-price {
-  display: flex;
+  display: grid;
+  margin-bottom: 8px;
+
+  column-gap: 2px;
 
   grid-column-start: 5;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
 }
 
 .filter-buttons {
@@ -597,6 +602,8 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+
+  grid-column: 1 / -1;
 }
 
 .filter-list {
@@ -670,14 +677,19 @@ body {
   position: relative;
 
   height: 48px;
+  margin-bottom: 43px;
 }
 
 .filter-price-min {
-  margin-right: 2px;
+  grid-column-start: 1;
 }
 
 .filter-price-min .filter-input {
   border-radius: 4px 0 0 4px;
+}
+
+.filter-price-max {
+  grid-column-end: -1;
 }
 
 .filter-price-max .filter-input {
@@ -719,6 +731,56 @@ body {
 
 .filter-input:hover {
   background-color: #e6e6e6;
+}
+
+.range-scale {
+  position: relative;
+
+  width: calc(100% - 2px);
+  height: 4px;
+  margin: 0 auto;
+
+  border-bottom: 4px solid #61696c;
+
+  grid-column: 1 / -1;
+}
+
+.range-bar {
+  position: absolute;
+
+  height: 4px;
+
+  border-bottom: 4px solid #ffffff;
+}
+
+.range-toogle {
+  position: absolute;
+  top: -8px;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toogle-min {
+  left: 0;
+}
+
+.toogle-max {
+  right: 0;
+}
+
+.range-toogle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toogle:active,
+.range-toogle:focus {
+  outline: 3px solid #83b3d3;
 }
 
 .filter-buttons {
