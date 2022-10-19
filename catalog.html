@@ -9,6 +9,7 @@
   </head>
 
   <body>
+
     <div class="wrapper">
       <header class="main-header">
         <nav class="navigation">
@@ -38,6 +39,7 @@
           <a class="button button-brown" href="#">Хочу сюда!</a>
         </div>
       </header>
+
       <main class="main">
         <section class="filter">
           <header class="catalog-header">
@@ -112,10 +114,10 @@
               </label>
               <div class="range-scale">
                 <div class="range-bar" style="left: 0; width: 226px">
-                  <button class="range-toogle toogle-min" type="button">
+                  <button class="range-toggle toggle-min" type="button">
                     <span class="visually-hidden">Выбрать минимальную стоимость.</span>
                   </button>
-                  <button class="range-toogle toogle-max" type="button">
+                  <button class="range-toggle toggle-max" type="button">
                     <span class="visually-hidden">Выбрать максимальную стоимость.</span>
                   </button>
                 </div>
@@ -256,6 +258,7 @@
           </form>
         </section>
       </main>
+
       <footer class="main-footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -288,6 +291,61 @@
         </a>
       </footer>
     </div>
+
+    <!-- Чтобы открыть модальное окно, нужно добавить класс "modal-open" контейнеру ниже -->
+    <div class="modal-container">
+      <section class="modal">
+        <h2 class="modal-heading">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть окно.</span>
+        </button>
+        <form class="modal-search" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="modal-text modal-arrival-date" for="arrival-date">Дата заезда:</label>
+          <div class="modal-input-wrapper">
+            <span class="modal-input-calendar"></span>
+            <input class="modal-input modal-arrival-input" id="arrival-date" type="text" name="arrival-date" placeholder="Укажите дату">
+            <!-- Чтобы отобразить сообщение об ошибке сравнения актуальной и устаревшей даты, нужно контейнеру ниже поставить класс "error-date-arrival-on" -->
+            <span class="modal-status modal-error-date error-date-arrival-on">Мы не можем отправить вас в прошлое.</span>
+          </div>
+          <label class="modal-text modal-departure-date" for="departure-date">Дата выезда:</label>
+          <div class="modal-input-wrapper">
+            <span class="modal-input-calendar"></span>
+            <input class="modal-input modal-departure-input" id="departure-date" type="text" name="departure-date" placeholder="Укажите дату">
+            <!-- Чтобы отобразить сообщение об ошибке сравнения актуальной и устаревшей даты, нужно контейнеру ниже поставить класс "error-date-departure-on" -->
+            <span class="modal-status modal-error-date">Мы не можем отправить вас в прошлое.</span>
+            <!-- Чтобы отобразить сообщение о доступности номеров, нужно контейнеру ниже поставить класс "info-date-on" -->
+            <span class="modal-status info-date-on">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <label class="modal-text modal-number-adults" for="adults">Взрослые:</label>
+          <div class="modal-wrapper modal-adults-wrapper">
+            <button class="modal-human-button adults-less-button" type="button">
+              <span class="visually-hidden">Уменьшить количество взрослых на единицу.</span>
+            </button>
+            <button class="modal-human-button adults-more-button" type="button">
+              <span class="visually-hidden">Увеличить количество взрослых на единицу.</span>
+            </button>
+            <input class="modal-input modal-less-more-input" id="adults" type="number" name="number-adults" value="2">
+          </div>
+          <label class="modal-text modal-number-chields" for="chields">Дети:
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </span>
+          </label>
+          <div class="modal-wrapper modal-chields-wrapper">
+            <button class="modal-human-button chields-less-button" type="button">
+              <span class="visually-hidden">Уменьшить количество детей на единицу.</span>
+            </button>
+            <button class="modal-human-button chields-more-button" type="button">
+              <span class="visually-hidden">Увеличить количество детей на единицу.</span>
+            </button>
+            <input class="modal-input modal-less-more-input" id="chields" type="number" name="number-chields" value="2">
+          </div>
+          <button class="button button-blue modal-search-button" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
+
   </body>
 
 </html>
