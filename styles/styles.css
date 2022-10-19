@@ -1513,7 +1513,8 @@ body {
   cursor: pointer;
 }
 
-.tooltip-toggle:hover + .tooltip-text {
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
   display: inline-block;
 }
 
