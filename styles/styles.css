@@ -835,6 +835,7 @@ body {
   font-family: inherit;
   color: #333333;
 
+  background-color: #ffffff;
   background-image: url("../images/icons/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 18px top 52%;
