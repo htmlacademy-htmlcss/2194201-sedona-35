@@ -27,6 +27,7 @@ html {
 }
 
 body {
+  min-width: 1200px;
   height: 100%;
   margin: 0;
 
@@ -40,7 +41,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  width: 1200px;
   min-height: 100%;
   margin: 0 auto;
 
@@ -69,7 +70,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 5px;
+  padding: 8px 10px;
 
   font-weight: 700;
   font-size: 16px;
@@ -156,6 +157,7 @@ body {
   position: relative;
   z-index: 1;
 
+  flex-shrink: 0;
   width: 140px;
   margin-right: 28px;
 }
@@ -173,6 +175,8 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  max-width: 600px;
   margin: 0;
   padding: 0;
 
@@ -188,9 +192,10 @@ body {
 }
 
 .navigation-link {
-  padding: 19px 16px;
+  display: inline-block;
+  padding: 20px 16px;
 
-  line-height: 64px;
+  line-height: 24px;
   color: #000000;
 }
 
@@ -212,6 +217,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
   align-items: center;
 }
 
@@ -245,6 +251,7 @@ body {
 
   width: 20px;
   height: 20px;
+  overflow: hidden;
 
   font-size: 10px;
   line-height: 2;
@@ -511,6 +518,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   margin: 0;
   padding: 0;
@@ -588,7 +596,7 @@ body {
 
   grid-column-start: 5;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(3, min-content);
 }
 
 .filter-buttons {
@@ -614,11 +622,11 @@ body {
 }
 
 .filter-infrastructure .filter-item:not(:last-child) {
-  margin-bottom: 19px;
+  margin-bottom: 17px;
 }
 
 .filter-housing .filter-item:not(:last-child) {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .control {
@@ -638,11 +646,16 @@ body {
 .control-text {
   display: flex;
   align-items: center;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .control-text::before {
   content: "";
 
+  flex-shrink: 0;
   width: 20px;
   height: 20px;
   margin-right: 16px;
@@ -698,17 +711,20 @@ body {
 
 .filter-price-text {
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 20px;
-  bottom: 0;
 
-  height: 12px;
-  margin: auto;
+  display: inline-block;
+  height: 24px;
+  overflow: hidden;
 
-  line-height: 7px;
-  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  color: rgba(0 0 0 / 30%);
 
-  opacity: 0.3;
+  transform: translateY(-50%);
 }
 
 .filter-input {
@@ -812,11 +828,11 @@ body {
 .hotels-controls {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 50px 70px 40px 70px;
+  padding: 50px 70px 32px 70px;
 }
 
 .hotels-result-title {
+  margin-top: 6px;
   margin-right: auto;
 
   font-weight: 700;
@@ -826,7 +842,8 @@ body {
 }
 
 .hotels-sort {
-  width: 292px;
+  min-width: 292px;
+  height: 49px;
   margin-right: 6.6%;
   padding: 12px 40px 12px 18px;
 
@@ -862,13 +879,19 @@ body {
 
 .hotels-view {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 272px;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.hotels-view-item:not(:last-child) {
+.hotels-view-item {
+  margin-bottom: 8px;
+}
+
+.hotels-view-item:not(:nth-last-child(1)) {
   margin-right: 8px;
 }
 
@@ -907,7 +930,7 @@ body {
 }
 
 .hotels-result {
-  padding: 0 70px 52px 70px;
+  padding: 0 70px 51px 70px;
 }
 
 .hotels-list {
@@ -915,19 +938,19 @@ body {
 
   display: grid;
   margin: 0 0 40px 0;
-  padding: 0 0 40px 0;
+  padding: 0 0 38px 0;
 
   list-style: none;
 
   border-bottom: 1px solid #e6e6e6;
 
-  gap: 20px;
+  gap: 19px 20px;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .hotel-item {
   display: grid;
-  padding: 20px;
+  padding: 20px 19px;
 
   column-gap: 20px;
 
@@ -997,6 +1020,7 @@ body {
 }
 
 .hotel-rating {
+  align-self: center;
   height: 37px;
 
   background-image: url("../images/icons/rating.svg");
@@ -1057,12 +1081,13 @@ body {
 }
 
 .pagination-link {
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 14px 15px 16px 15px;
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 1.5;
 }
 
 .pagination-current,
@@ -1071,6 +1096,7 @@ body {
   color: #000000;
 
   background-color: #f2f2f2;
+  cursor: default;
 }
 
 .pagination-link-divider,
@@ -1083,7 +1109,7 @@ body {
 
 /* Subscribe Widget */
 .subscribe {
-  padding: 96px 70px 104px 70px;
+  padding: 96px 70px 105px 70px;
 }
 
 .subscribe-background {
@@ -1146,7 +1172,7 @@ body {
   max-width: 232px;
 
   font-size: 20px;
-  line-height: 36px;
+  line-height: 30px;
 
   border-radius: 0 4px 4px 0;
 }
@@ -1165,9 +1191,9 @@ body {
 
 .footer-social-list {
   display: flex;
+  flex-shrink: 0;
   flex-wrap: wrap;
-  width: 134px;
-  min-width: 134px;
+  max-width: 134px;
   margin: 0;
   padding: 0;
 
@@ -1359,6 +1385,7 @@ body {
 
 .form-label-icon {
   grid-column-start: 4;
+  position: relative;
 }
 
 .modal-chields-wrapper {
@@ -1475,6 +1502,7 @@ body {
   left: 0;
 
   display: none;
+  margin-top: 4px;
   padding: 0 20px;
 
   font-size: 16px;
@@ -1493,11 +1521,7 @@ body {
 }
 
 .tooltip {
-  position: relative;
-  top: -1px;
-
-  display: inline-block;
-  margin-left: -4px;
+  position: absolute;
 }
 
 .tooltip-toggle {
@@ -1529,7 +1553,7 @@ body {
 
   display: none;
   width: 256px;
-  margin-top: 16px;
+  margin-top: 14px;
   padding: 20px 18px 23px 22px;
 
   font-weight: 400;
@@ -1540,7 +1564,7 @@ body {
 
   background-color: #333333;
   border-radius: 10px;
-  transform: translateX(-50%);
+  transform: translateX(-52%);
 }
 
 .tooltip-text::before {
