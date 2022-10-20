@@ -617,7 +617,6 @@ body {
 
   grid-column-start: 5;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, min-content);
 }
 
 .filter-buttons {
@@ -937,7 +936,7 @@ body {
   border-radius: 4px;
 
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: min-content 1fr repeat(3, auto);
+  grid-template-rows: min-content 1fr;
   row-gap: 16px;
 }
 
@@ -948,14 +947,6 @@ body {
   text-decoration: none;
 
   grid-column: 1 /-1;
-}
-
-.hotel-link:first-of-type {
-  grid-row-start: 1;
-}
-
-.hotel-link:last-of-type {
-  grid-row-start: 2;
 }
 
 .hotel-img {
@@ -975,8 +966,6 @@ body {
 
 .hotel-meta {
   color: #333333;
-
-  grid-row-start: 3;
 }
 
 .hotel-meta-type-housing {
@@ -990,12 +979,10 @@ body {
 
 .hotel-page {
   grid-column-start: 1;
-  grid-row-start: 4;
 }
 
 .button-hotel-favorites {
   grid-column-end: -1;
-  grid-row-start: 4;
 }
 
 .hotel-rating {
@@ -1007,7 +994,6 @@ body {
   background-position-y: center;
 
   grid-column-start: 1;
-  grid-row-start: 5;
 }
 
 .rating-1 {
@@ -1042,7 +1028,6 @@ body {
   border-radius: 4px;
 
   grid-column-end: -1;
-  grid-row-start: 5;
 }
 
 .pagination {
@@ -1299,7 +1284,6 @@ body {
   align-items: center;
 
   grid-template-columns: 137px 110px 1fr 131px 110px;
-  grid-template-rows: repeat(4, auto);
   row-gap: 48px;
 }
 
