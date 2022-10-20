@@ -199,7 +199,7 @@ body {
   color: #000000;
 }
 
-.navigation-link-current:before {
+.navigation-link-current::before {
   content: "";
   position: absolute;
   right: 0;
@@ -1355,6 +1355,13 @@ body {
 }
 
 .modal-text {
+  padding: 11px 10px 11px 0;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+
   grid-column-start: 1;
 }
 
@@ -1384,8 +1391,9 @@ body {
 }
 
 .form-label-icon {
-  grid-column-start: 4;
   position: relative;
+
+  grid-column-start: 4;
 }
 
 .modal-chields-wrapper {
@@ -1401,15 +1409,6 @@ body {
   border-radius: 10px;
 
   grid-column: 1 / -1;
-}
-
-.modal-text {
-  padding: 11px 10px 11px 0;
-
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: capitalize;
 }
 
 .modal-input {
@@ -1578,6 +1577,6 @@ body {
   height: 9px;
   margin: auto;
 
-  background-image: url(../images/icons/tooltip-arrow.svg);
+  background-image: url("../images/icons/tooltip-arrow.svg");
   background-repeat: no-repeat;
 }
