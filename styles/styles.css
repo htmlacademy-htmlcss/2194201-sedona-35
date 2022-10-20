@@ -739,6 +739,7 @@ body {
 .filter-input {
   max-width: 143px;
   padding-right: 45px;
+
   font-weight: 700;
 }
 
@@ -1069,7 +1070,7 @@ body {
 
 /* Subscribe Widget */
 .subscribe {
-  padding: 96px 70px 105px 70px;
+  padding: 96px 70px 104px 70px;
 }
 
 .subscribe-background {
@@ -1478,17 +1479,17 @@ body {
 
   display: none;
   width: 256px;
-  margin-top: 14px;
+  margin-top: 10px;
   padding: 20px 18px 23px 22px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  text-transform: none;
 
   background-color: #333333;
   border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   transform: translateX(-52%);
 }
 
