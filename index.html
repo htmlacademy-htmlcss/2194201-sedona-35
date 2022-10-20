@@ -115,7 +115,7 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="subscribe-input-title">
               <span class="visually-hidden">Введите свой e-mail.</span>
-              <input class="subscribe-input" type="email" name="e-mail" placeholder="Ваш e-mail" required>
+              <input class="field subscribe-input" type="email" name="e-mail" placeholder="Ваш e-mail" required>
             </label>
             <button class="button button-blue subscribe-button" type="submit">Подписаться</button>
           </form>
@@ -166,14 +166,14 @@
           <label class="modal-text modal-arrival-date" for="arrival-date">Дата заезда:</label>
           <div class="modal-input-wrapper">
             <span class="modal-input-calendar"></span>
-            <input class="modal-input modal-arrival-input" id="arrival-date" type="text" name="arrival-date" placeholder="Укажите дату">
+            <input class="field modal-input modal-arrival-input" id="arrival-date" type="text" name="arrival-date" placeholder="Укажите дату">
             <!-- Чтобы отобразить сообщение об ошибке сравнения актуальной и устаревшей даты, нужно контейнеру ниже поставить класс "error-date-arrival-on" -->
             <span class="modal-status modal-error-date error-date-arrival-on">Мы не можем отправить вас в прошлое.</span>
           </div>
           <label class="modal-text modal-departure-date" for="departure-date">Дата выезда:</label>
           <div class="modal-input-wrapper">
             <span class="modal-input-calendar"></span>
-            <input class="modal-input modal-departure-input" id="departure-date" type="text" name="departure-date" placeholder="Укажите дату">
+            <input class="field modal-input modal-departure-input" id="departure-date" type="text" name="departure-date" placeholder="Укажите дату">
             <!-- Чтобы отобразить сообщение об ошибке сравнения актуальной и устаревшей даты, нужно контейнеру ниже поставить класс "error-date-departure-on" -->
             <span class="modal-status modal-error-date">Мы не можем отправить вас в прошлое.</span>
             <!-- Чтобы отобразить сообщение о доступности номеров, нужно контейнеру ниже поставить класс "info-date-on" -->
@@ -187,7 +187,7 @@
             <button class="modal-human-button adults-more-button" type="button">
               <span class="visually-hidden">Увеличить количество взрослых на единицу.</span>
             </button>
-            <input class="modal-input modal-less-more-input" id="adults" type="number" name="number-adults" value="2">
+            <input class="field modal-input modal-less-more-input" id="adults" type="number" name="number-adults" value="2">
           </div>
           <span class="form-label-icon">
             <label class="modal-text modal-number-chields" for="chields">Дети:</label>
@@ -203,7 +203,7 @@
             <button class="modal-human-button chields-more-button" type="button">
               <span class="visually-hidden">Увеличить количество детей на единицу.</span>
             </button>
-            <input class="modal-input modal-less-more-input" id="chields" type="number" name="number-chields" value="2">
+            <input class="field modal-input modal-less-more-input" id="chields" type="number" name="number-chields" value="2">
           </div>
           <button class="button button-blue modal-search-button" type="submit">Найти</button>
         </form>
