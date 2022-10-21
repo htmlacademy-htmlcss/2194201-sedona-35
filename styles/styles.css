@@ -63,6 +63,7 @@ body {
   border: 0;
 
   clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
 }
 
@@ -750,6 +751,7 @@ body {
 .modal-input::-webkit-outer-spin-button {
   margin: 0;
 
+  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -865,6 +867,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
 
+  -webkit-appearance: none;
   appearance: none;
 }
 
