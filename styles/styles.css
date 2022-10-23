@@ -230,6 +230,10 @@ body {
   color: #000000;
 }
 
+.navigation-link-current {
+  pointer-events: none;
+}
+
 .navigation-link-current::before {
   content: "";
   position: absolute;
