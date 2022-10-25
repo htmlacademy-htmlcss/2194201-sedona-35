@@ -597,6 +597,9 @@ body {
 }
 
 .breadcrumbs-link-current {
+  color: #ffffff;
+  text-decoration: none;
+
   pointer-events: none;
 }
 
@@ -800,7 +803,9 @@ body {
 
 .range-bar {
   position: absolute;
+  left: 0;
 
+  width: 226px;
   height: 4px;
 
   border-bottom: 4px solid #ffffff;
@@ -1100,7 +1105,8 @@ body {
   color: #000000;
 
   background-color: #f2f2f2;
-  cursor: default;
+
+  pointer-events: none;
 }
 
 .pagination-link-divider,
@@ -1108,7 +1114,7 @@ body {
 .pagination-link-divider:active {
   color: #000000;
 
-  cursor: default;
+  pointer-events: none;
 }
 
 /* Subscribe Widget */
